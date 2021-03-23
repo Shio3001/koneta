@@ -19,8 +19,6 @@ class canvas_data:
         
         self.canvas.place(x=0,y=0,width=1280, height=720)
 
-        self.image_pil = Image.open('j.jpg')
-        self.image_tk = ImageTk.PhotoImage(self.image_pil)  # ImageTkフォーマットへ変換
 
         #self.canvas.create_image(0, 0, anchor='nw', image=self.image_tk)
 
@@ -62,6 +60,13 @@ class canvas_data:
         self.window.mainloop()
 
     def testtt(self):
+
+        start_time1 =  datetime.datetime.now()
+
+        self.image_pil = Image.open('j.jpg')
+        self.image_tk = ImageTk.PhotoImage(self.image_pil)  # ImageTkフォーマットへ変換
+
+
         start_time0 =  datetime.datetime.now()
         self.image_tk = ImageTk.PhotoImage(self.image_pil)  # ImageTkフォーマットへ変換
 
@@ -69,9 +74,11 @@ class canvas_data:
         self.canvas.create_image(0,0,anchor='nw', image=self.image_tk)
         exit_time =  datetime.datetime.now()
 
+        c = exit_time - start_time1
         a = exit_time - start_time0
         b = exit_time - start_time
 
+        print(c)
         print(a)
         print(b)
 
