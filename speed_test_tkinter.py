@@ -82,7 +82,7 @@ class canvas_data:
         print(a)
         print(b)
 
-
+ｃ
 
 canvas_dataAAA = canvas_data()
 canvas_dataAAA.t()
