@@ -6,7 +6,7 @@ def loop():
     i1 = random.randint(0, 9)
     i2 = random.randint(0, 9)
 
-    m = random.randint(0, 3)
+    m = random.randint(0, 2)
 
     correct = 0
 
